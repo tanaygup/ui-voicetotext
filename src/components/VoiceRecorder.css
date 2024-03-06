@@ -1,0 +1,40 @@
+.voice-recorder-card {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.wave-container {
+    position: relative;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.wave {
+    position: absolute;
+    margin-left: 3px;
+    bottom: 0;
+    left: 0;
+    width: 20%;
+    height: 20px;
+    background-color: #007bff;
+    opacity: 0.6;
+    animation: wave-animation 2s infinite;
+}
+
+@keyframes wave-animation {
+    0% {
+        transform: scaleY(1);
+    }
+    50% {
+        transform: scaleY(0.5);
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+.wave.active {
+    background-color: #dc3545; /* Change color when recording */
+}

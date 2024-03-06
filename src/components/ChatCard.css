@@ -1,0 +1,27 @@
+/* ChatCard.css */
+
+.chat-container {
+    display: flex;
+    justify-content: flex-end; /* Align items to the right of the parent container */
+    align-items: flex-start; /* Align items to the top of the parent container */
+    overflow: hidden;
+  }
+  
+  .chat-card {
+    max-width: 70%; /* Adjust as needed */
+    margin-top: 20px; /* Add margin to separate from the top */
+  }
+  
+  .user-chat {
+    background-color: #007bff; /* Example background color for user messages */
+    color: white; /* Example text color for user messages */
+  }
+  
+  .other-chat {
+    background-color: #f0f0f0; /* Example background color for other users' messages */
+    color: black; /* Example text color for other users' messages */
+  }
+  
+  .empty-card {
+    flex-grow: 1; 
+  }
